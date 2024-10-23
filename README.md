@@ -2,8 +2,9 @@
 ## ENPM667 - Controls for Robotic Systems
 
 ## Team Members
-- Datta Lohith Gannavarapu: 119455395
 - Venkata Sai Sricharan Kasturi: 119444788
+- Datta Lohith Gannavarapu: 119455395
+
 
 ## Software Requirements
 - **MATLAB**: Any version that supports the files included.
