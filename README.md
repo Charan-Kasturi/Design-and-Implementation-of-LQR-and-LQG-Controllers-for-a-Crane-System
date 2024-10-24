@@ -1,69 +1,85 @@
-# Technical Analysis and Simulation of Chattering-Free Digital Sliding-Mode Control
+# Design and Implementation of LQR and LQG Controllers for a Crane System
+## ENPM667 - Controls for Robotic Systems
 
-## Project Overview
-- This project involves the MATLAB simulation of the concepts presented in the paper "Chattering-Free Digital Sliding-Mode Control With State Observer and Disturbance Rejection". Our work simulates the results originally obtained using SICONOS and verifies these results using MATLAB. This project was undertaken for ENPM667. 
+## Team Members
+- Venkata Sai Sricharan Kasturi: 119444788
+- Datta Lohith Gannavarapu: 119455395
 
-## Authors
-- Venkata Sai Sricharan Kasturi - UID: 119444788
-- Datta Lohith Gannavarapu - UID: 119455395
+## Software Requirements
+- **MATLAB**: Any version that supports the files included.
 
-## File Structure
-The MATLAB codes are organized according to the systems they simulate. Each system script contains the necessary functions to run the simulations. The systems are categorized as follows:
+## Contents
+The following files are included in this repository:
+- **Codes and Results**
+  - `Project Code`
+    - `Problem_C.m`: MATLAB script for Controllability Check.
+    - `Problem_D_1.m`: MATLAB script for LQR Design for a Linear System.
+    - `Problem_D_2.m`: MATLAB script for LQR Design for a Non-Linear System.
+    - `Problem_E.m`: MATLAB script for Observability Check.
+    - `Problem_F1.m`: MATLAB script for Luenberger Observer for Linear Systems.
+    - `Problem_F2.m`: MATLAB script for Luenberger Observer for Non-Linear Systems.
+    - `Problem_G_1.m`: MATLAB script for LQG Design for a Linear System.
+    - `Problem_G_2.m`: MATLAB script for LQG Design for a Non-Linear System.
+   - `Results`
+      - `d1.png`: Resulting graph for Problem D1.
+      - `d2.png`: Resulting graph for Problem D2.
+      - `f1.png`: Resulting graph for Problem F1.
+      - `f2.png`: Resulting graph for Problem F2.
+      - `g1.png`: Resulting graph for Problem G1.
+      - `g2.png`: Resulting graph for Problem G2.
+  - [`Report.pdf`](Report.pdf): Documentation of project findings.
+  - `Simulation.gif`: Video showcasing the simulation results.
+- `README.md`: This readme file.
 
-- [System1.m](Project/System1.m)
-- [System2.m](Project/System2.m)
-- [System3.m](Project/System3.m)
+## Installation Instructions
+To get started with the project, follow these steps:
 
-## Running the Simulations
-To run the simulations for each system:
+1. Clone the repository or download the zip file.
+2. Open the MATLAB files using MATLAB.
+3. Run the relevant scripts to perform the simulations.
 
-1. Navigate to the extracted folder.
-2. Run the main MATLAB script provided for that system and make sure to have the folder added to path.
-3. The script will execute the simulation and generate the corresponding graphs.
-4. To run different test cases, uncomment the lines mentioned in the .m files
+## Problem Statement
+The provided scripts simulate the results needed to solve the final project requirements for the course.
 
-## Dependencies
-MATLAB R2023a
+### Usage
+1. Execute the relevant MATLAB scripts based on the problem parts:
+    - **Part C**: Controllability Check - [`Problem_C.m`](Project%20Code/Problem_C.m)
+    - **Part D(a)**: LQR Design for a Linear System - [`Problem_D_1.m`](Project%20Code/Problem_D_1.m)
+    - **Part D(b)**: LQR Design for a Non-Linear System - [`Problem_D_2.m`](Project%20Code/Problem_D_2.m)
+    - **Part E**: Observability Check - [`Problem_E.m`](Project%20Code/Problem_E.m)
+    - **Part F(a)**: Luenberger Observer for Linear Systems - [`Problem_f1.m`](Project%20Code/Problem_f1.m)
+    - **Part F(b)**: Luenberger Observer for Non-Linear Systems - [`Problem_F2.m`](Project%20Code/Problem_F2.m)
+    - **Part G(a)**: LQG Design for a Linear System - [`Problem_G_1.m`](Project%20Code/Problem_G_1.m)
+    - **Part G(b)**: LQG Design for a Non-Linear System - [`Problem_G_2.m`](Project%20Code/Problem_G_2.m)
 
-## Assumptions
-To avoid a circle of projections as suggested in the paper, previoud value is used in System2 and 3.
-
-## Results
-The detailed technical report for this project can be found at [Technical Report](gdatta_charan03_technical_report.pdf). This report includes comprehensive explanations of the methodologies, simulation results, and discussions on the findings. The Output Results for the three Systems are illustrated below.
-
-### System 1
-
-![System 1 Result 1](Project/Results/sys1_1.jpg)
-
-![System 1 Result 2](Project/Results/sys1_2.jpg)
-
-![System 1 Result 3](Project/Results/sys1_3.jpg)
-
-![System 1 Result 4](Project/Results/sys1_4.jpg)
-
-![System 1 Result 5](Project/Results/sys1_5.jpg)
-
-
-### System 2
-
-![System 2 Result 1](Project/Results/sys2_1.jpg)
-
-![System 2 Result 2](Project/Results/sys2_2.jpg)
-
-![System 2 Result 3](Project/Results/sys2_3.jpg)
-
-![System 2 Result 4](Project/Results/sys2_4.jpg)
-
-### System 3
-
-![System 3 Result 1](Project/Results/sys3_1.jpg)
-
-![System 3 Result 2](Project/Results/sys3_2.jpg)
-
-![System 3 Result 3](Project/Results/sys3_3.jpg)
-
-![System 3 Result 4](Project/Results/sys3_4.jpg)
+2. Each script will execute simulations and display corresponding graphs and matrices.
 
 
-## References
-Original Paper: Vincent Acary, Bernard Brogliato, and Yury V. Orlov, "Chattering-Free Digital Sliding-Mode Control With State Observer and Disturbance Rejection", IEEE Transactions on Automatic Control, Vol. 57, No. 5, May 2012. [PDF](Chattering-Free_Digital_Sliding-Mode_Control_With_State_Observer_and_Disturbance_Rejection.pdf)
+### Results
+
+The results of the simulations are as follows:
+
+#### Problem D1
+![d1](Results/d1.png)
+
+#### Problem D2
+![d2](Results/d2.png)
+
+#### Problem F1
+![f1](Results/f1.png)
+
+#### Problem F2
+![f2](Results/f2.png)
+
+#### Problem G1
+![g1](Results/g1.png)
+
+#### Problem G2
+![g2](Results/g2.png)
+
+
+### Simulation Results
+![Simulation](Simulation.gif)
+
+## Acknowledgements
+We would like to thank our instructors and peers for their support and guidance throughout this project.
